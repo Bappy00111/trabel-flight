@@ -172,9 +172,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="lg:navbar-end ">
-        <a className="text-white font-medium bg-sky-500/100 cursor-pointer hover:bg-sky-600 px-4 py-2 rounded-full ">
-          Login
-        </a>
+      <button className="btn btn-info text-white rounded-full">Login</button>
       </div>
     </div>
   );
