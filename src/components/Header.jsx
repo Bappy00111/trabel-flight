@@ -171,7 +171,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="lg:navbar-end ">
+      <div>
       <button className="btn btn-info text-white rounded-full">Login</button>
       </div>
     </div>

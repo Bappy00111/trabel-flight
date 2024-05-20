@@ -17,7 +17,7 @@ const SearchFlight = () => {
           <button className="btn ">International</button>
         </div>
       </div>
-      <div className="grid  grid-col-2 md:grid-cols-3 gap-4 py-5">
+      <div className="grid  grid-col-2 md:grid-cols-3 gap-4 py-5 px-2">
       <div className="borer border-2 p-3 flex gap-5 rounded-xl">
          <div>
             <p>Dhaka</p>
