@@ -18,8 +18,8 @@ const Flight = () => {
             Europe, America, Canada or anywhere
           </p>
           <div className="pt-5 ">
-            <button className="btn btn-info text-white mr-3">Domestic</button>
-            <button className="btn ">International</button>
+            <button className="btn btn-info text-white mr-3 px-10">Domestic</button>
+            <button className="btn bg-slate-300 px-10">International</button>
           </div>
         </div>
 
