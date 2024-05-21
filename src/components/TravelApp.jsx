@@ -34,15 +34,15 @@ const TravelApp = () => {
           alt=""
         />
       </div>
-      <div className="py-4 lg:hidden">
+      {/* <div className="py-4 ">
           <img className="w-[130px]" src={logo} alt="" />
           <p className="text-gray-500">
             ShareTrip is the country’s first and leading online travel
-            aggregator (OTA). Since our inception, we have dreamt of making
+            aggregator (OTA). Since our inception, we have dreamt <br /> of making
             travel easier for people of all ages and we move forward to make
             that dream into reality.
           </p>
-        </div>
+        </div> */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-5 py-6 ">
       <div className="">
           <img className="w-[130px]" src={logo} alt="" />

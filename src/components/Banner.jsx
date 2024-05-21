@@ -11,9 +11,9 @@ const Banner = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="absolute inset-0 flex sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto items-center">
-          <div className="text-white space-y-3">
-            <h1 className="md:text-4xl text-2xl font-semibold">Where to Fly?</h1>
-            <p className="md:text-xl text:lg font-semibold">
+          <div className="text-white space-y-2 px-4">
+            <h1 className="text-xl md:text-4xl  font-semibold">Where to Fly?</h1>
+            <p className="text:lg md:text-xl  font-semibold">
               Find Cheap Flights, Airline Tickets in Bangladesh
             </p>
           </div>
