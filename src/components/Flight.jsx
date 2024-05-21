@@ -9,7 +9,7 @@ const Flight = () => {
     <div className="py-10 bg-gray-100 ">
       <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-2">
         <div className="text-center space-y-3">
-          <h1 className="font-semibold md:text-4xl text-xl">
+          <h1 className="font-bold md:text-4xl text-xl">
             Popular Flight Destinations from BD
           </h1>
           <p className="text-slate-500">
