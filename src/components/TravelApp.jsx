@@ -8,7 +8,7 @@ const TravelApp = () => {
         <h3 className="font-bold md:text-4xl text-xl">
           Your all-in-one Travel App
         </h3>
-        <p className="text-slate-500">
+        <p className="text-slate-500 text-sm">
           Get flights, hotels, holidays and visa assistance in just a few taps.
           Enjoy real-time flight <br /> updates, schedules, travel info, play
           games, win trip coins and much more.

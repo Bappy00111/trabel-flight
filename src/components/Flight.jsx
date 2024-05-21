@@ -12,7 +12,7 @@ const Flight = () => {
           <h1 className="font-bold md:text-4xl text-xl">
             Popular Flight Destinations from BD
           </h1>
-          <p className="text-slate-500">
+          <p className="text-slate-500 text-sm">
             Expand your travel horizons with new facets! Diversify your journey
             to explore local <br /> destinations or global marvels around Asia,
             Europe, America, Canada or anywhere
