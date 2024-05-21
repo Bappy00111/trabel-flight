@@ -3,7 +3,7 @@ import logo from "../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy5
 
 const TravelApp = () => {
   return (
-    <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto">
+    <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4">
       <div className="text-center space-y-3">
         <h3 className="font-semibold md:text-4xl text-xl">
           Your all-in-one Travel App
@@ -34,8 +34,17 @@ const TravelApp = () => {
           alt=""
         />
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-5 py-10 ">
-        <div>
+      <div className="py-4 lg:hidden">
+          <img className="w-[130px]" src={logo} alt="" />
+          <p className="text-gray-500">
+            ShareTrip is the country’s first and leading online travel
+            aggregator (OTA). Since our inception, we have dreamt of making
+            travel easier for people of all ages and we move forward to make
+            that dream into reality.
+          </p>
+        </div>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-5 py-6 ">
+      <div className="">
           <img className="w-[130px]" src={logo} alt="" />
           <p className="text-gray-500">
             ShareTrip is the country’s first and leading online travel

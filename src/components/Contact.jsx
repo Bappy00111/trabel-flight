@@ -11,7 +11,7 @@ import {
 const Contact = () => {
   return (
     <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-2 ">
-      <div className="grid md:grid-cols-3 text-gray-600 py-5">
+      <div className="grid  md:grid-cols-3 text-gray-600 py-5 space-y-8">
         <div>
         <p className="text-lg font-bold">Contact Us</p>
         <ul className="space-y-3 pt-3">

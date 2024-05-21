@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchFlight = () => {
   return (
-    <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto">
+    <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto ">
       <div className="text-center space-y-3">
         <h1 className="font-semibold md:text-4xl text-xl">
           Search Cheapest Flight By Destination

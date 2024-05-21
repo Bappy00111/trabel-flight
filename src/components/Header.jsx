@@ -3,7 +3,7 @@ import logo  from '../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy
 
 const Header = () => {
   return (
-    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto ">
+    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto flex justify-around">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,34 +22,6 @@ const Header = () => {
               />
             </svg>
           </div>
-          {/* <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
-            >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul> */}
           <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li>
               <a>Flight</a>
@@ -111,8 +83,8 @@ const Header = () => {
         </div>
         <img className="h-10 w-40 cursor-pointer sm:it" src={logo} alt="" />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-gray-500">
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu menu-horizontal px-2  text-gray-500">
           <li>
             <a>Flight</a>
           </li>
