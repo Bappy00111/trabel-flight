@@ -6,10 +6,10 @@ const Members = () => {
       <div className=" md:flex items-center justify-between h-[200px] sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4">
         
           <div className="space-y-2 ">
-            <h3 className="text-xl  md:text-4xl font-semibold">
+            <h3 className="text-xl  md:text-4xl font-bold">
               Members can save on lifestyle
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Enjoy privileges such as exclusive flight prices, unbelievable
               discounts on thousands of hotels, and much more
             </p>

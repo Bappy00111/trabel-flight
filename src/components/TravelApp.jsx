@@ -34,27 +34,19 @@ const TravelApp = () => {
           alt=""
         />
       </div>
-      {/* <div className="py-4 ">
+      
+      <div className="grid grid-cols-1  md:grid-cols-5 gap-5 py-10 ">
+      <div className="col-span-2 md:col-span-1">
           <img className="w-[130px]" src={logo} alt="" />
-          <p className="text-gray-500">
+          <p className="text-gray-500 text-sm">
             ShareTrip is the country’s first and leading online travel
             aggregator (OTA). Since our inception, we have dreamt <br /> of making
             travel easier for people of all ages and we move forward to make
             that dream into reality.
           </p>
-        </div> */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-5 py-6 ">
-      <div className="">
-          <img className="w-[130px]" src={logo} alt="" />
-          <p className="text-gray-500">
-            ShareTrip is the country’s first and leading online travel
-            aggregator (OTA). Since our inception, we have dreamt of making
-            travel easier for people of all ages and we move forward to make
-            that dream into reality.
-          </p>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
+          <ul className="space-y-3 text-gray-600 text-sm">
             <li className="font-bold text-lg">Explore</li>
             <li>About Us</li>
             <li>Terms & Conditions</li>
@@ -64,7 +56,7 @@ const TravelApp = () => {
           </ul>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
+          <ul className="space-y-3 text-gray-600 text-sm">
             <li className="font-bold text-lg">Services</li>
             <li>Flight</li>
             <li>Hotel</li>
@@ -73,7 +65,7 @@ const TravelApp = () => {
           </ul>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
+          <ul className="space-y-3 text-gray-600 text-sm">
             <li className="font-bold text-lg">Useful Links</li>
             <li>Travel Guide</li>
             <li>Travel Advisory</li>
@@ -82,7 +74,7 @@ const TravelApp = () => {
           </ul>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
+          <ul className="space-y-3 text-gray-600 text-sm">
             <li className="font-bold text-lg">Promotions</li>
             <li>News</li>
             <li>Promotions</li>

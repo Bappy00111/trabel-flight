@@ -11,10 +11,10 @@ import {
 const Contact = () => {
   return (
     <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-2 ">
-      <div className="grid  md:grid-cols-3 text-gray-600 py-5 space-y-8">
+      <div className="grid  md:grid-cols-3 text-gray-800 py-5 space-y-8">
         <div>
         <p className="text-lg font-bold">Contact Us</p>
-        <ul className="space-y-3 pt-3">
+        <ul className="space-y-3 pt-3 text-sm">
           <li>
             Email : <span className="text-cyan-400">ask@sharetrip.net</span>
           </li>
@@ -50,15 +50,15 @@ const Contact = () => {
         </div>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
-            <li className="text-lg font-bold">Dhaka Office</li>
+          <ul className="space-y-3 text-gray-600 text-sm">
+            <li className="text-lg font-bold ">Dhaka Office</li>
             <li>Rangs Pearl Tower, 4th Floor,</li>
             <li>House no. 76, Road 12, Block E, Banani,</li>
             <li>Dhaka 1213, Bangladesh</li>
           </ul>
         </div>
         <div>
-          <ul className="space-y-3 text-gray-600">
+          <ul className="space-y-3 text-gray-600 text-sm">
             <li className="text-lg font-bold">Chattogram Office</li>
             <li>Rangs Pearl Tower, 4th Floor,</li>
             <li>House no. 76, Road 12, Block E, Banani,</li>

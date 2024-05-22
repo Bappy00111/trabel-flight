@@ -5,7 +5,7 @@ const Banner = () => {
     <>
       <div className="relative">
         <img
-          className="w-full  object-cover  bg-center"
+          className="w-full  object-cover h-[300px]  bg-center"
           src="https://cdn.sharetrip.net/sharetrip_net/production/public/images/sample-images/banner/flight-banner-image.jpg"
           alt=""
         />
