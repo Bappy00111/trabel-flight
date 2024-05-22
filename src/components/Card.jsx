@@ -6,7 +6,7 @@ import img4 from "../../src/image/tanveer-prachurjo-BsHCalALiMw-unsplash-min.jpe
 const Card = () => {
     return (
         <div className="container">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-10 text-sm">
             <div className="card">
               <div className=" relative overflow-hidden   rounded-lg ">
                 <img

@@ -3,7 +3,7 @@ import logo  from '../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy
 
 const Header = () => {
   return (
-    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto flex justify-around px-4">
+    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto flex justify-between ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -144,7 +144,7 @@ const Header = () => {
         </ul>
       </div>
       <div>
-      <button className="btn btn-info text-white rounded-full">Login</button>
+      <button className="bg-[#1882ff] px-6 py-2 rounded-full text-white">Login</button>
       </div>
     </div>
   );
