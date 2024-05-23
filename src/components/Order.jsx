@@ -12,7 +12,7 @@ import OrderSlider from "./OrderSlider";
 const Order = () => {
   return (
     <div className="px-4">
-      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl h-[500px]  md:h-[300px] -mt-10  md:-mt-20   rounded-xl py-4 px-8">
+      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl h-[450px]  md:h-[300px] -mt-10  md:-mt-20   rounded-xl  py-2 md:py-4 px-4 md:px-8">
         <div className=" lg:hidden gap-4 ">
           <OrderSlider/>
         </div>
@@ -62,7 +62,7 @@ const Order = () => {
           </div>
         </div>
 
-        <div className="py-2 md:py-4">
+        <div className="py-4">
           <hr />
         </div>
 
@@ -129,17 +129,17 @@ const Order = () => {
           </div>
         </div>
 
-        <div className="  space-y-4 lg:hidden py-4">
-        <div className="flex gap-2 items-center border p-2 rounded-lg divide-x">
+        <div className="space-y-4 lg:hidden py-4">
+        <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">DAC</h2>
-            <div className="pl-4">
+            <div className="pl-2">
               <h2 className="font-bold text-gray-600">Dhaka</h2>
               <p className="text-sm">Bangladesh,Hazrat Shahjal...</p>
             </div>
           </div>
-          <div className="flex gap-2 items-center border p-2 rounded-lg divide-x">
+          <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">CXB</h2>
-            <div className="pl-4">
+            <div className="pl-2">
               <h2 className="font-bold text-gray-600">Cox's Bazar</h2>
               <p className="text-sm">Bangladesh,Cox's Bazar Ai...</p>
             </div>
