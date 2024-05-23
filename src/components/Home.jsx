@@ -7,13 +7,14 @@ import TravelApp from "./TravelApp";
 import Contact from "./Contact";
 import MemberSection from "./MemberSection";
 import Footer from "./Footer";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <Flight />
-
+      <Slider/>
       <SearchFlight />
       <Members />
       <TravelApp />
