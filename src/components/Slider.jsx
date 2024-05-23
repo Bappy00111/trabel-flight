@@ -85,7 +85,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-10 px-4">
+    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-10 px-4 md:px-0">
       <div className="text-center space-y-3 pb-6">
         <h1 className="text-xl md:text-4xl font-bold ">
           Most Popular Destinations
@@ -100,7 +100,7 @@ const Slider = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={slidesPerView ? slidesPerView : 5}
+        slidesPerView={slidesPerView ? slidesPerView : 3}
         // slidesPerView={5}
         spaceBetween={30}
         coverflowEffect={{

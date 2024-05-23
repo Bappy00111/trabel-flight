@@ -22,7 +22,7 @@ const Header = () => {
               />
             </svg>
           </div>
-          <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-600">
             <li>
               <a>Flight</a>
             </li>
@@ -84,7 +84,7 @@ const Header = () => {
         <img className="h-10 w-40 cursor-pointer sm:it" src={logo} alt="" />
       </div>
       <div className="navbar-center hidden lg:flex flex-grow justify-center">
-        <ul className="menu menu-horizontal px-2  text-gray-500">
+        <ul className="menu menu-horizontal px-2  text-gray-600">
           <li>
             <a>Flight</a>
           </li>
