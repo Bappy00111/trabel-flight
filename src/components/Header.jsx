@@ -3,8 +3,8 @@ import logo  from '../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy
 
 const Header = () => {
   return (
-    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto flex justify-between ">
-      <div className="navbar-start ">
+    <div className="navbar  sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto flex justify-between items-center">
+      <div className="navbar-start flex items-center">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -83,7 +83,7 @@ const Header = () => {
         </div>
         <img className="h-10 w-40 cursor-pointer sm:it" src={logo} alt="" />
       </div>
-      <div className="navbar-center hidden lg:flex ">
+      <div className="navbar-center hidden lg:flex flex-grow justify-center">
         <ul className="menu menu-horizontal px-2  text-gray-500">
           <li>
             <a>Flight</a>
@@ -97,7 +97,7 @@ const Header = () => {
           <li>
             <details>
               <summary>Visa</summary>
-              <ul className="p-2 w-40">
+              <ul className="p-2 w-40 rounded z-10">
                 <li>
                   <a>visa Application</a>
                 </li>
@@ -119,7 +119,7 @@ const Header = () => {
           <li>
             <details>
               <summary>Others</summary>
-              <ul className="p-2 w-40">
+              <ul className="p-2 w-40 rounded z-10">
                 <li>
                   <a>About</a>
                 </li>
@@ -143,7 +143,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="navbar-end">
       <button className="bg-[#1882ff] px-6 py-2 rounded-full text-white">Login</button>
       </div>
     </div>
