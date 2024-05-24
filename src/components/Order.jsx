@@ -144,15 +144,15 @@ const Order = () => {
               <p className="text-sm">Bangladesh,Cox's Bazar Ai...</p>
             </div>
           </div>
-          <div className="flex gap-2">
-          <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
+          <div className="grid grid-cols-2 gap-2">
+          <div className="flex gap-2 items-center border  rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">25</h2>
             <div className="pl-2">
               <h2 className="font-bold text-gray-600">May</h2>
               <p className="text-sm">Saturd..,2024</p>
             </div>
           </div>
-          <div className="flex gap-2 items-center border px-4 rounded-lg  divide-x">
+          <div className="flex gap-2 items-center border rounded-lg  divide-x">
             <h2 className="font-bold text-gray-900">27</h2>
             <div className="pl-2">
               <h2 className="font-bold text-gray-600">May</h2>
