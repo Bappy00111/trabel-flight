@@ -9,6 +9,8 @@ import MemberSection from "./MemberSection";
 import Footer from "./Footer";
 import Slider from "./Slider";
 import Order from "./Order";
+import SearchAirlines from "./SearchAirlines";
+import Hotel from "./Hotel";
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
       <Banner />
       <Order/>
       <Flight />
+      <SearchAirlines/>
       <Slider/>
+      <Hotel/>
       <SearchFlight />
       <Members />
       <TravelApp />

@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 // import './styles.css';
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 import { MdFlight } from "react-icons/md";
 import { RiHotelLine } from "react-icons/ri";
@@ -20,42 +20,42 @@ import { FaAmazonPay } from "react-icons/fa";
 const OrderSlider = () => {
   return (
     <>
-    <div className="p-4 max-w-md mx-auto"></div>
+      <div className="py-2 "></div>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={5}
+        spaceBetween={10}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
       >
         <SwiperSlide className="">
-          <div className="flex gap-2 items-center">
+          <div className="">
             <span>
-              <MdFlight className="w-6 h-6 transform rotate-45 text-blue-600" />
+              <MdFlight className="w-4 h-4 transform rotate-45 text-blue-600" />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">Flight</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex gap-2 items-center">
+          <div>
             <span>
-              <RiHotelLine className="w-6 h-6 " />
+              <RiHotelLine className="w-4 h-4 " />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">Hotel</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex gap-2 items-center">
+          <div>
             <span>
-              <LuPalmtree className="w-6 h-6  " />
+              <LuPalmtree className="w-4 h-4  " />
             </span>
             <h1 className="text-sm font-bold">Holiday</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex gap-2 items-center">
+          <div>
             <span>
-              <BsJournalMinus className="w-6 h-6 " />
+              <BsJournalMinus className="w-4 h-4 " />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-smtext-gray-600 font-sm">
               Visa
@@ -63,19 +63,19 @@ const OrderSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex gap-2 items-center">
+          <div>
             <span>
-              <FaMobileRetro className="w-6 h-6 " />
+              <FaMobileRetro className="w-4 h-4 " />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">
-              Mobile Recharge
+              Recharge
             </h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex gap-2 items-center">
+          <div>
             <span>
-              <FaAmazonPay className="w-6 h-6 " />
+              <FaAmazonPay className="w-4 h-4 " />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">
               Pay Bill
@@ -83,6 +83,18 @@ const OrderSlider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <style jsx>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 24px; /* Adjust the width of navigation arrows */
+          height: 24px; /* Adjust the height of navigation arrows */
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 20px; /* Adjust the size of the arrow icon */
+        }
+        
+      `}</style>
     </>
   );
 };

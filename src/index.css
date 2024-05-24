@@ -9,7 +9,7 @@
 /* Custom Swiper navigation button styles */
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
-  @apply w-8 h-8 text-gray-600;
+  @apply w-8 h-8 text-blue-600;
   /* Extra styles for better visibility */
   
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-2 flex justify-between py-6 text-sm">
+    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl  px-2 flex md:justify-between py-6 text-sm ">
       <div>
         <ul className="md:flex hidden gap-5 text-gray-600">
           <li>Support Center</li>

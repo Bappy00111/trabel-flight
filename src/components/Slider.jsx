@@ -87,7 +87,7 @@ const Slider = () => {
   return (
     <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-10 px-4 md:px-0">
       <div className="text-center space-y-3 pb-6">
-        <h1 className="text-xl md:text-4xl font-bold ">
+        <h1 className="text-xl md:text-4xl font-bold lg:font-extrabold">
           Most Popular Destinations
         </h1>
         <p className="text-slate-500 text-sm">

@@ -12,7 +12,7 @@ import OrderSlider from "./OrderSlider";
 const Order = () => {
   return (
     <div className="px-4">
-      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl h-[450px]  md:h-[300px] -mt-10  md:-mt-20   rounded-xl  py-2 md:py-4 px-4 md:px-8">
+      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl h-[450px]  md:h-[300px] -mt-10  md:-mt-20   rounded-2xl  py-2 md:py-6 px-4 md:px-8">
         <div className=" lg:hidden gap-4 ">
           <OrderSlider/>
         </div>
@@ -144,19 +144,19 @@ const Order = () => {
               <p className="text-sm">Bangladesh,Cox's Bazar Ai...</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex gap-2">
           <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">25</h2>
             <div className="pl-2">
               <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Saturday,2024</p>
+              <p className="text-sm">Saturd..,2024</p>
             </div>
           </div>
           <div className="flex gap-2 items-center border px-4 rounded-lg  divide-x">
             <h2 className="font-bold text-gray-900">27</h2>
             <div className="pl-2">
               <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Monday,2024</p>
+              <p className="text-sm">Mond..,2024</p>
             </div>
           </div>
           </div>

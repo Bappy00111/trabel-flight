@@ -5,7 +5,7 @@ const SearchFlight = () => {
   return (
     <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4">
       <div className="text-center space-y-3">
-        <h1 className="font-bold md:text-4xl text-xl">
+        <h1 className="font-bold lg:font-extrabold md:text-4xl text-xl">
           Search Cheapest Flight By Destination
         </h1>
         <p className="text-slate-500 text-sm">
