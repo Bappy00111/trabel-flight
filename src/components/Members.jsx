@@ -15,7 +15,7 @@ const Members = () => {
             </p>
           </div>
           <div className="pt-3">
-            <button className="btn bg-orange-500 border-none rounded-full text-white ">
+            <button className="btn bg-orange-500 hover:bg-orange-600 border-none rounded-full text-white font-bold ">
               Find Holiday Savings
             </button>
           </div>

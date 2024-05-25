@@ -12,15 +12,15 @@ import OrderSlider from "./OrderSlider";
 const Order = () => {
   return (
     <div className="px-4">
-      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl h-[450px]  md:h-[300px] -mt-10  md:-mt-20   rounded-2xl  py-2 md:py-6 px-4 md:px-8">
-        <div className=" lg:hidden gap-4 ">
-          <OrderSlider/>
+      <div className="relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto  bg-white shadow-2xl md:h-[450px]  lg:h-[320px] -mt-10  md:-mt-20   rounded-2xl  py-2 md:py-6 px-4 md:px-8">
+        <div className=" md:hidden gap-4 ">
+          <OrderSlider />
         </div>
 
-        <div className="hidden lg:flex gap-4 ">
+        <div className="hidden md:flex gap-4 ">
           <div className="flex gap-2 items-center">
             <span>
-              <MdFlight className="w-6 h-6 transform rotate-45 text-blue-600" />
+              <MdFlight className="w-6 h-6  text-gray-600" />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">Flight</h1>
           </div>
@@ -67,70 +67,124 @@ const Order = () => {
         </div>
 
         <div>
-          <ul className="flex gap-2 lg:hidden">
+        <div className="py-4">
+          <ul className="flex gap-4">
             <li className="flex gap-2 items-center">
               <span>
-                <FaRegCircle className="h-3 w-3 text-gray-400" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               <p className="text-sm font-bold text-gray-600">One way</p>
             </li>
             <li className="flex gap-2 items-center">
               <span>
-                <FaRegDotCircle className="h-3 w-3 text-blue-500" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               <p className="text-sm font-bold text-gray-600">Round Trip</p>
             </li>
             <li className="flex gap-2 items-center">
               <span>
-                <FaRegCircle className="h-3 w-3 text-gray-400" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
-              <p className="text-sm font-bold text-gray-600">Multi City</p>
+              <p className="text-sm font-bold text-gray-600"> Multi City</p>
             </li>
           </ul>
+        </div>
         </div>
 
         <div className=" justify-between items-center py-4 hidden lg:flex">
           <div className="  flex gap-4 items-center">
             <button className="text-sm font-bold text-gray-600 font-smtext-gray-600 flex items-center gap-2 bg-gray-200 px-2 md:px-6 py-2 rounded">
               <span>
-                <FaRegCircle className="h-4 w-4 text-gray-400" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               One way
             </button>
-            <button className="text-sm font-bold text-white font-smtext-gray-600 flex items-center gap-2 bg-[#1882ff] px-6 py-2 rounded">
+            <button className="text-sm font-bold text-gray-600 font-smtext-gray-600 flex items-center gap-2 bg-gray-200 px-6 py-2 rounded">
               <span>
-                <FaRegDotCircle className="h-4 w-4 text-white" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               Round Trip
             </button>
             <button className="text-sm font-bold text-gray-600 font-smtext-gray-600 flex items-center gap-2 bg-gray-200 px-6 py-2 rounded">
               <span>
-                <FaRegCircle className="h-4 w-4 text-gray-400" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info  h-4 w-4"
+                />
               </span>
               Multi City
             </button>
           </div>
           <div>
             <div className="flex gap-2 ">
-              <button className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm">
+              {/* <select className="select select-bordered w-full max-w-xs text-blue-700 font-bold text-sm bg-blue-200">
+                <option disabled selected>
                 1 Traveller
+                </option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
+              </select>
+              <select className=" px-4 py-2 rounded-xl  text-blue-700 font-bold text-sm bg-blue-200 ">
+                <option disabled selected>
+                Economy
+                </option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
+              </select> */}
+              <select className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm border-none rounded">
+              <option  >
+                Economy
+                </option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
                 <span>
                   <IoIosArrowDown className="w-4 h-4" />
                 </span>
-              </button>
+              </select>
+              <select className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm rounded">
+              <option>
+                Economy
+                </option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
+                <span>
+                  <IoIosArrowDown className="w-4 h-4" />
+                </span>
+              </select>
               {/* <button className="font-boldd text-sm bg-blue-200">1 Traveller</button> */}
-              <button className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm">
+              {/* <button className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm">
                 Economy
                 <span>
                   <IoIosArrowDown className="w-4 h-4" />
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
 
         <div className="space-y-4 lg:hidden py-4">
-        <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
+          <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">DAC</h2>
             <div className="pl-2">
               <h2 className="font-bold text-gray-600">Dhaka</h2>
@@ -145,24 +199,24 @@ const Order = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
-          <div className="flex gap-2 items-center border  rounded-lg divide-x">
-            <h2 className="font-bold text-gray-900">25</h2>
-            <div className="pl-2">
-              <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Saturd..,2024</p>
+            <div className="flex gap-2 items-center border  rounded-lg divide-x">
+              <h2 className="font-bold text-gray-900">25</h2>
+              <div className="pl-2">
+                <h2 className="font-bold text-gray-600">May</h2>
+                <p className="text-sm">Saturd..,2024</p>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-2 items-center border rounded-lg  divide-x">
-            <h2 className="font-bold text-gray-900">27</h2>
-            <div className="pl-2">
-              <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Mond..,2024</p>
+            <div className="flex gap-2 items-center border rounded-lg  divide-x">
+              <h2 className="font-bold text-gray-900">27</h2>
+              <div className="pl-2">
+                <h2 className="font-bold text-gray-600">May</h2>
+                <p className="text-sm">Mond..,2024</p>
+              </div>
             </div>
-          </div>
           </div>
           <div>
             <button className="bg-[#f78e1e] w-full py-2 rounded">
-             <p className="text-white font-bold text-sm">Search Flight</p>
+              <p className="text-white font-bold text-sm">Search Flight</p>
             </button>
           </div>
         </div>
@@ -171,33 +225,29 @@ const Order = () => {
           <div className="flex gap-2 items-center border p-2 rounded-lg w-5/6 divide-x">
             <h2 className="font-bold text-gray-900">DAC</h2>
             <div className="pl-4">
-              <h2 className="font-bold text-gray-600">Dhaka</h2>
-              <p className="text-sm">Bangladesh,Hazrat Shahjal...</p>
+              <input className="" type="text" />
             </div>
           </div>
           <div className="flex gap-2 items-center border p-2 rounded-lg w-5/6 divide-x">
             <h2 className="font-bold text-gray-900">CXB</h2>
             <div className="pl-4">
-              <h2 className="font-bold text-gray-600">Cox's Bazar</h2>
-              <p className="text-sm">Bangladesh,Cox's Bazar Ai...</p>
+              <input type="text" />
             </div>
           </div>
           <div className="flex gap-2 items-center border p-2 rounded-lg w-5/6 divide-x">
             <h2 className="font-bold text-gray-900">25</h2>
             <div className="pl-4">
-              <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Saturday,2024</p>
+              <input type="date" />
             </div>
           </div>
           <div className="flex gap-2 items-center border p-2 rounded-lg w-5/6 divide-x">
             <h2 className="font-bold text-gray-900">27</h2>
             <div className="pl-4">
-              <h2 className="font-bold text-gray-600">May</h2>
-              <p className="text-sm">Monday,2024</p>
+              <input type="date" />
             </div>
           </div>
           <div>
-            <button className="bg-[#f78e1e] py-4 px-4 rounded-xl">
+            <button className="bg-[#f78e1e] py-2 px-2 rounded-xl">
               <IoSearchOutline className="h-8 w-8" />
             </button>
           </div>
@@ -207,13 +257,21 @@ const Order = () => {
           <ul className="flex gap-4">
             <li className="flex gap-2 items-center">
               <span>
-                <FaRegDotCircle className="h-4 w-4 text-blue-600" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               <p className="text-sm font-bold text-gray-600">Regular Fare</p>
             </li>
             <li className="flex gap-2 items-center">
               <span>
-                <FaRegCircle className="h-4 w-4 text-gray-400" />
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className="radio radio-info h-4 w-4"
+                />
               </span>
               <p className="text-sm font-bold text-gray-600">Student Fare</p>
             </li>

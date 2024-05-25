@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -11,16 +9,15 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 const Slider = () => {
-  const [slidesPerView, setSlidesPerView] = useState(5);
+  const [slidesPerView, setSlidesPerView] = useState(4);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
         setSlidesPerView(1); // Chhoto devices-e ekta kore slide dakhanor jonno
-      } else {
-        setSlidesPerView(5); // Boro devices-e 5 ta slide dekhanor jonno
       }
     };
 
@@ -85,56 +82,63 @@ const Slider = () => {
   ];
 
   return (
-    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-10 px-4 md:px-0">
+    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-20 px-4 md:px-0">
       <div className="text-center space-y-3 pb-6">
         <h1 className="text-xl md:text-4xl font-bold lg:font-extrabold">
           Most Popular Destinations
         </h1>
         <p className="text-slate-500 text-sm">
           Expand your travel horizons with new facets! Explore the world by
-          choosing  your ideal travel <br /> destinations in Asia, Europe, America,
-          Australia and more with ShareTrip.
+          choosing your ideal travel <br /> destinations in Asia, Europe,
+          America, Australia and more with ShareTrip.
         </p>
       </div>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={slidesPerView ? slidesPerView : 3}
-        // slidesPerView={5}
-        spaceBetween={30}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        autoplay={{
-          delay: 2000, // 2 seconds
-          disableOnInteraction: false,
-        }}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="mySwiper"
-      >
-        {imagesData.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="swiper-slide-content relative overflow-hidden rounded-lg">
-              <img
-                src={item.img}
-                alt={item.header}
-                className="swiper-img w-full sm:w-auto h-[400px] object-cover "
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30 pointer-events-none"></div>
-              <div className="absolute inset-x-0 bottom-0 p-4 text-white   text-center ">
-                <h2 className="font-bold">{item.header}</h2>
-                <p className="text-sm">{item.text}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+      <>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={slidesPerView}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={{
+            el: ".swiper-pagination",
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2000, // 2 seconds
+            disableOnInteraction: false,
+          }}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {imagesData.map((data, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className="relative rounded-lg overflow-hidden">
+                  <img
+                    className="rounded-lg w-full object-cover"
+                    src={data?.img}
+                    alt="img-one"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end p-4">
+                    <div className="text-white">
+                      <h2 className="text-xl font-bold md:text-sm">{data?.header}</h2>
+                      <p>{data?.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </>
     </div>
   );
 };

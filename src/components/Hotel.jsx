@@ -4,7 +4,7 @@ import HotelSlier from "./HotelSlier";
 const Hotel = () => {
   return (
     <div className=" bg-gray-100 ">
-      <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4 py-10">
+      <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4 py-20">
         <div className="space-y-3">
           <h1 className="font-bold lg:font-extrabold md:text-4xl text-xl">
           Best Hotels for Your Next Trip
