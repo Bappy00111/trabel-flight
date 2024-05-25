@@ -187,30 +187,26 @@ const Order = () => {
           <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">DAC</h2>
             <div className="pl-2">
-              <h2 className="font-bold text-gray-600">Dhaka</h2>
-              <p className="text-sm">Bangladesh,Hazrat Shahjal...</p>
+              <input type="text" />
             </div>
           </div>
           <div className="flex gap-2 items-center border px-4 rounded-lg divide-x">
             <h2 className="font-bold text-gray-900">CXB</h2>
             <div className="pl-2">
-              <h2 className="font-bold text-gray-600">Cox's Bazar</h2>
-              <p className="text-sm">Bangladesh,Cox's Bazar Ai...</p>
+              <input type="text" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
-            <div className="flex gap-2 items-center border  rounded-lg divide-x">
-              <h2 className="font-bold text-gray-900">25</h2>
-              <div className="pl-2">
-                <h2 className="font-bold text-gray-600">May</h2>
-                <p className="text-sm">Saturd..,2024</p>
+            <div className=" gap-2 items-center border  rounded divide-x">
+              
+              <div>
+                <input type="date" />
               </div>
             </div>
-            <div className="flex gap-2 items-center border rounded-lg  divide-x">
-              <h2 className="font-bold text-gray-900">27</h2>
-              <div className="pl-2">
-                <h2 className="font-bold text-gray-600">May</h2>
-                <p className="text-sm">Mond..,2024</p>
+            <div className=" gap-2 items-center border  rounded divide-x">
+              
+              <div>
+                <input type="date" />
               </div>
             </div>
           </div>

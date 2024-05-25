@@ -31,7 +31,7 @@ const OrderSlider = () => {
         <SwiperSlide className="">
           <div className="">
             <span>
-              <MdFlight className="w-4 h-4 transform rotate-45 text-blue-600" />
+              <MdFlight className="w-4 h-4  text-gray-600" />
             </span>
             <h1 className="text-sm font-bold text-gray-600 font-sm">Flight</h1>
           </div>
