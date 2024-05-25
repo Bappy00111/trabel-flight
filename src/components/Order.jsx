@@ -66,8 +66,7 @@ const Order = () => {
           <hr />
         </div>
 
-        <div>
-        <div className="py-4">
+        <div className="py-4 lg:hidden">
           <ul className="flex gap-4">
             <li className="flex gap-2 items-center">
               <span>
@@ -100,7 +99,6 @@ const Order = () => {
               <p className="text-sm font-bold text-gray-600"> Multi City</p>
             </li>
           </ul>
-        </div>
         </div>
 
         <div className=" justify-between items-center py-4 hidden lg:flex">
@@ -138,24 +136,8 @@ const Order = () => {
           </div>
           <div>
             <div className="flex gap-2 ">
-              {/* <select className="select select-bordered w-full max-w-xs text-blue-700 font-bold text-sm bg-blue-200">
-                <option disabled selected>
-                1 Traveller
-                </option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select>
-              <select className=" px-4 py-2 rounded-xl  text-blue-700 font-bold text-sm bg-blue-200 ">
-                <option disabled selected>
-                Economy
-                </option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select> */}
               <select className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm border-none rounded">
-              <option  >
-                Economy
-                </option>
+                <option>1 Traveller</option>
                 <option>Han Solo</option>
                 <option>Greedo</option>
                 <span>
@@ -163,22 +145,13 @@ const Order = () => {
                 </span>
               </select>
               <select className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm rounded">
-              <option>
-                Economy
-                </option>
+                <option>Economy</option>
                 <option>Han Solo</option>
                 <option>Greedo</option>
                 <span>
                   <IoIosArrowDown className="w-4 h-4" />
                 </span>
               </select>
-              {/* <button className="font-boldd text-sm bg-blue-200">1 Traveller</button> */}
-              {/* <button className="flex items-center gap-2 bg-blue-200 px-4 py-2 text-blue-700 font-bold text-sm">
-                Economy
-                <span>
-                  <IoIosArrowDown className="w-4 h-4" />
-                </span>
-              </button> */}
             </div>
           </div>
         </div>
@@ -198,13 +171,11 @@ const Order = () => {
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div className=" gap-2 items-center border  rounded divide-x">
-              
               <div>
                 <input type="date" />
               </div>
             </div>
             <div className=" gap-2 items-center border  rounded divide-x">
-              
               <div>
                 <input type="date" />
               </div>
