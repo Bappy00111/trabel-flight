@@ -1,3 +1,4 @@
+@import "keep-react/css";
 * {
   font-family: "Mulish", sans-serif;
 }
@@ -13,3 +14,9 @@
   /* Extra styles for better visibility */
   
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
