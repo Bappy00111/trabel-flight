@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { Envelope, Lock } from "phosphor-react";
-import { Button, Icon, Input, Label } from "keep-react";
-import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
-import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { BiLogoFacebook } from "react-icons/bi";
+
 
 const Regester = () => {
   const { createUser } = useContext(AuthContext);
@@ -32,57 +32,69 @@ const Regester = () => {
     form.reset();
   };
   return (
-    <div className="px-4">
-      <form
-        onSubmit={handleSubmite}
-        className="mx-auto max-w-md space-y-2 rounded-lg border p-8 shadow-md"
-      >
-      <h2 className="text-center font-bold text-lg md:text-2xl">Create a new account</h2>
-      
-        <fieldset className="space-y-1">
-          <Label htmlFor="name">Full Name</Label>
-          <div className="relative">
-            <Input placeholder="Enter Name" name="name" className="ps-11" />
-            <Icon>
-            <CgProfile />
-            </Icon>
-          </div>
-        </fieldset>
-        <fieldset className="space-y-1">
-          <Label htmlFor="name">Email</Label>
-          <div className="relative">
-            <Input placeholder="Enter email" name="email" className="ps-11" />
-            <Icon>
-              <Envelope size={19} color="#AFBACA" />
-            </Icon>
-          </div>
-        </fieldset>
-        <fieldset className="space-y-1">
-          <Label htmlFor="password">Password</Label>
-          <div className="relative">
-            <Input
-              id="password"
-              placeholder="Enter password"
-              name="password"
-              type="password"
-              className="ps-11"
-            />
-            <Icon>
-              <Lock size={19} color="#AFBACA" />
-            </Icon>
-          </div>
-        </fieldset>
-        <Button size="sm" color="secondary" type="submit">
-          Regester
-        </Button>
-        <p className="font-bold text-sm">
-          Alredy have a account{" "}
-          <Link to="/login">
-            <span className="text-blue-600">Login</span>
-          </Link>
+    <div className="bg-blue-50 px-4 py-10">
+    <div className="md:w-2/3 lg:w-1/3 bg-white shadow-2xl flex flex-col mx-auto p-5 md:p-10 rounded-xl">
+      <div className="text-center space-y-2">
+        <h1 className="font-bold text-3xl">Let’s Get Started</h1>
+        <p className="text-sm text-gray-600">
+        Create an account and get the Deals & Promotions news
         </p>
+      </div>
+      <div className="flex gap-5 justify-center pt-6">
+        <button className="bg-blue-50 flex items-center gap-2 px-4 md:px-12  py-2 rounded-lg">
+          <FcGoogle />
+          <span className="font-bold text-gray-700">Google</span>
+        </button>
+        <button className="bg-blue-50 flex items-center gap-2 px-4 md:px-12  py-2 rounded-lg">
+          <BiLogoFacebook className="text-blue-600" />
+          <span className="font-bold text-gray-700">Facebook</span>
+        </button>
+      </div>
+      <p className="text-center pt-4 text-gray-600">Or Sign In with</p>
+
+      <form className="space-y-2">
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Email</span>
+          </label>
+          <input
+            type="email"
+            placeholder="Enter Your email"
+            className="input input-bordered bg-blue-50"
+            required
+          />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Mobile Number</span>
+          </label>
+          <input
+            type="number"
+            placeholder="017xxxxxxxx"
+            className="input input-bordered bg-blue-50"
+            required
+          />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">password</span>
+          </label>
+          <input
+            type="email"
+            placeholder="Enter your password"
+            className="input input-bordered bg-blue-50"
+            required
+          />
+        </div>
       </form>
+      
+        <button className="bg-[#1882ff] hover:bg-blue-600 text-white py-4 rounded-lg mt-4">
+          Sing Up
+        </button>
+        <p className="pt-4 text-center">Already have an account ? <Link to='/login'><span className="text-blue-600 ">Sing In</span></Link></p>
+      
     </div>
+  </div>
   );
 };
 
