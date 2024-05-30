@@ -13,12 +13,12 @@ const Login = () => {
             You need to Sign in first to continue
           </p>
         </div>
-        <div className="flex justify-between gap-4 pt-6">
-          <button className="bg-blue-50 flex items-center gap-2 px-10 md:px-14 lg:px-16 py-3 rounded-lg text-sm  font-bold">
+        <div className="flex justify-between pt-6">
+          <button className="bg-blue-50 flex items-center gap-2 px-6 md:px-14 lg:px-16 py-3 rounded-lg text-sm  font-bold">
             <FcGoogle />
             <span className="font-bold text-gray-700">Google</span>
           </button>
-          <button className="bg-blue-50 flex items-center gap-2 px-10 md:px-14 lg:px-16  py-3 rounded-lg text-sm  font-bold">
+          <button className="bg-blue-50 flex items-center gap-2 px-6 md:px-14 lg:px-16  py-3 rounded-lg text-sm  font-bold">
             <BiLogoFacebook className="text-blue-600" />
             <span className="font-bold text-gray-700">Facebook</span>
           </button>
