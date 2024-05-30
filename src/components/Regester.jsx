@@ -41,11 +41,11 @@ const Regester = () => {
         </p>
       </div>
       <div className="flex justify-between pt-6">
-        <button className="bg-blue-50 flex items-center gap-2 px-8 md:px-16  py-2 rounded-lg text-sm  font-bold">
+        <button className="bg-blue-50 flex items-center gap-2 px-6 md:px-10 lg:px-16  py-2 rounded-lg text-sm  font-bold">
           <FcGoogle />
           <span className="font-bold text-gray-700">Google</span>
         </button>
-        <button className="bg-blue-50 flex items-center gap-2 px-8 md:px-16  py-2 rounded-lg text-sm  font-bold">
+        <button className="bg-blue-50 flex items-center gap-2 px-6 md:px-10 lg:px-16  py-2 rounded-lg text-sm  font-bold">
           <BiLogoFacebook className="text-blue-600" />
           <span className="font-bold text-gray-700">Facebook</span>
         </button>
@@ -59,8 +59,8 @@ const Regester = () => {
           </label>
           <input
             type="email"
-            placeholder="Enter Your email"
-            className="input input-bordered bg-[#eff6ff]"
+            placeholder="Your email"
+            className="input input-bordered bg-[#eff6ff] border-none h-10"
             required
           />
         </div>
@@ -71,7 +71,7 @@ const Regester = () => {
           <input
             type="number"
             placeholder="017xxxxxxxx"
-            className="input input-bordered bg-[#eff6ff]"
+            className="input input-bordered bg-[#eff6ff] border-none h-10"
             required
           />
         </div>
@@ -81,8 +81,8 @@ const Regester = () => {
           </label>
           <input
             type="email"
-            placeholder="Enter your password"
-            className="input input-bordered bg-[#eff6ff]"
+            placeholder="Your password"
+            className="input input-bordered bg-[#eff6ff] border-none h-10"
             required
           />
         </div>
