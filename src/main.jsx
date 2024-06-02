@@ -9,6 +9,7 @@ import Home from "./components/Home.jsx";
 import Login from "./components/Login.jsx";
 import Regester from "./components/Regester.jsx";
 import AuthProvider from "./providers/AuthProvider.jsx";
+import DetelsPages from "./components/DetelsPages.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         path:'/regester',
         element:<Regester></Regester>
       },
+      {
+        path:'/detels',
+        element:<DetelsPages></DetelsPages>
+      }
     ]
   },
 ]);
