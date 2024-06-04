@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const DetelsPages = () => {
   const datas = [
@@ -72,7 +73,7 @@ const DetelsPages = () => {
           <div className="card lg:card-side bg-base-100 shadow-xl mt-5">
           <figure><img className="lg:h-full lg:w-60" src={data.image} alt="Album"/></figure>
           <div className="card-body">
-            <h2 className="card-title text-lg font-bold lg:text-2xl">{data.name}</h2>
+            <Link to='/cardDetels'><h2 className="card-title text-lg font-bold lg:text-2xl">{data.name}</h2></Link>
             <p className="text-sm font-bold text-gray-600">{data.description}</p>
             <span className="flex items-center gap-2">
             <FaLocationDot/>

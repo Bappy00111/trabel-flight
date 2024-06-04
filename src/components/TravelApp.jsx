@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xX3N0X2xvZ28iIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1OTIuNjEgMTYxLjIzIj48c3R5bGU+LnN0MHtmaWxsOiMxODgyZmZ9LnN0.svg";
+import logo from "../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xX3N0X2xvZ28iIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1OTIuNjEgMTYxLjIzIj48c3R5bGU+LnN0MHtmaWxsOiMxODgyZmZ9LnN.svg";
 
 const TravelApp = () => {
   return (
@@ -34,15 +34,15 @@ const TravelApp = () => {
           alt=""
         />
       </div>
-      
+
       <div className="grid grid-cols-1  md:grid-cols-5 gap-5 py-10 ">
-      <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 md:col-span-1">
           <img className="w-[130px]" src={logo} alt="" />
           <p className="text-gray-500 text-sm">
             ShareTrip is the country’s first and leading online travel
-            aggregator (OTA). Since our inception, we have dreamt <br /> of making
-            travel easier for people of all ages and we move forward to make
-            that dream into reality.
+            aggregator (OTA). Since our inception, we have dreamt <br /> of
+            making travel easier for people of all ages and we move forward to
+            make that dream into reality.
           </p>
         </div>
         <div>
