@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../../src/image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xX3N0X2xvZ28iIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1OTIuNjEgMTYxLjIzIj48c3R5bGU+LnN0MHtmaWxsOiMxODgyZmZ9LnN.svg";
-
+import logo from '../../src/image/logo.svg'
 const TravelApp = () => {
   return (
     <div className="py-10 sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4">
