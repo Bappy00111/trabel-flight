@@ -4,6 +4,7 @@ import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 import { GiCoffeeCup, GiMirrorMirror } from "react-icons/gi";
 import { BsFillEaselFill, BsTelephoneFill } from "react-icons/bs";
 import { IoMdCheckmark } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const CardDetels = () => {
   return (
@@ -160,13 +161,15 @@ const CardDetels = () => {
                   <p className="line-through">BDT 15,180</p>
                   <p className="text-lg font-medium">BDT 13,966</p>
                 </span>
-                <button className="bg-[#1882ff] px-4 py-2 text-white rounded text-sm font-bold">RESERVE</button>
+                <Link to="/bookingDetels">
+                  <button className="bg-[#1882ff] px-4 py-2 text-white rounded text-sm font-bold">
+                    RESERVE
+                  </button>
+                </Link>
               </div>
             </div>
             <hr />
-            <div>
-                
-            </div>
+            <div></div>
             <div className="grid grid-cols-1 md:grid-cols-3  my-2 text-sm  text-gray-600 ">
               <div>
                 <span className="flex items-center gap-2 ">
@@ -190,10 +193,11 @@ const CardDetels = () => {
                   <p className="line-through">BDT 11385</p>
                   <p className="text-lg font-medium">BDT 10,474</p>
                 </span>
-                <button className="bg-[#1882ff] px-4 py-2 text-white rounded text-sm font-bold">RESERVE</button>
+                <button className="bg-[#1882ff] px-4 py-2 text-white rounded text-sm font-bold">
+                  RESERVE
+                </button>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

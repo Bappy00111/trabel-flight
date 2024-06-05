@@ -11,6 +11,7 @@ import Regester from "./components/Regester.jsx";
 import AuthProvider from "./providers/AuthProvider.jsx";
 import DetelsPages from "./components/DetelsPages.jsx";
 import CardDetels from "./components/CardDetels.jsx";
+import BookingDetels from "./components/BookingDetels.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path:'/cardDetels',
         element:<CardDetels></CardDetels>
+      },
+      {
+        path:'/bookingDetels',
+        element:<BookingDetels></BookingDetels>
       }
     ]
   },

@@ -88,25 +88,6 @@ const DetelsPages = () => {
         </div>
         ))}
       </div>
-      {/* <div className="sm:max-w-xl  md:max-w-full lg:max-w-screen-xl mx-auto py-10 px-10 lg:hidden">
-        {datas.map((data) => (
-          <div className="card w-full bg-base-100 shadow-xl mt-5">
-            <figure className="">
-              <img
-                src={data.image}
-                className="rounded-xl h-52"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
     </>
   );
 };
