@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { Tooltip } from "flowbite";
+import { FaArrowRightLong, FaUser } from "react-icons/fa6";
+
+import CoustomerDetels from "./CoustomerDetels";
+import TravellarsRooms from "./TravellarsRooms";
+import RoomsReqerments from "./RoomsReqerments";
 
 const BookingDetels = () => {
   const [isClick, setIsClick] = useState(-1);
+  
 
   const handleClick = (index) => {
     setIsClick(index);
   };
+
 
   const images = [
     {
@@ -92,10 +97,10 @@ const BookingDetels = () => {
     },
   ];
   return (
-    <div className="my-container grid grid-cols-3 gap-5 ">
-      <div className="grid col-span-2 ">
+    <div className="my-container grid md:grid-cols-3 gap-5 ">
+      <div className="grid col-span-2 text-sm">
         <div className="py-5 border rounded-lg">
-          <div className="flex justify-between ">
+          <div className="md:flex justify-between ">
             <div className="flex items-center gap-2 bg-[#1882ff] py-4 w-full px-4">
               <input
                 type="radio"
@@ -181,7 +186,7 @@ const BookingDetels = () => {
                   type="button3"
                   className="mb-2 md:mb-0 rounded-lg text-sm  "
                 >
-                 Up to 75% discount for SkyTrip cardholders
+                  Up to 75% discount for SkyTrip cardholders
                 </button>
 
                 <div
@@ -203,7 +208,7 @@ const BookingDetels = () => {
                   type="button4"
                   className="mb-2 md:mb-0 rounded-lg text-xs  "
                 >
-                 Up to 74% discount for Brac Bank, The City Bank, Eastern ....
+                  Up to 74% discount for Brac Bank, The City Bank, Eastern ....
                 </button>
 
                 <div
@@ -211,7 +216,10 @@ const BookingDetels = () => {
                   role="tooltip"
                   className="absolute  z-10 invisible inline-block px-3 py-2 text-sm  text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
                 >
-                  Up to 74% discount for Brac Bank, The City Bank, Eastern Bank Limited, LankaBangla Finance, Mastercard, Mutual Trust Bank Limited, Prime Bank, Southeast Bank, Standard Chartered and United Commercial Bank Ltd cardholders
+                  Up to 74% discount for Brac Bank, The City Bank, Eastern Bank
+                  Limited, LankaBangla Finance, Mastercard, Mutual Trust Bank
+                  Limited, Prime Bank, Southeast Bank, Standard Chartered and
+                  United Commercial Bank Ltd cardholders
                   <div className="tooltip-arrow" data-popper-arrow></div>
                 </div>
               </button>
@@ -225,7 +233,7 @@ const BookingDetels = () => {
                   type="button5"
                   className="mb-2 md:mb-0 rounded-lg text-sm  "
                 >
-                 Up to 70% discount for Specific Bank Cardholders and MFS
+                  Up to 70% discount for Specific Bank Cardholders
                 </button>
 
                 <div
@@ -237,7 +245,6 @@ const BookingDetels = () => {
                   <div className="tooltip-arrow" data-popper-arrow></div>
                 </div>
               </button>
-            
             </div>
           </div>
           <div className="my-10 mx-5 py-5 space-y-3">
@@ -247,7 +254,7 @@ const BookingDetels = () => {
             <p className="text-sm">
               Convenience Fee may vary depending on the payment method
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 ">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 ">
               {images.map((data, index) => (
                 <div key={index}>
                   <img
@@ -269,12 +276,9 @@ const BookingDetels = () => {
             </div>
           </div>
         </div>
-        <div className="my-10 border rounded py-5">
-          <h3 className="text-xl font-bold bg-slate-50 py-2">
-            Customer Details
-          </h3>
-          <div></div>
-        </div>
+        <CoustomerDetels/>
+        <TravellarsRooms/>
+        <RoomsReqerments/>
       </div>
 
       <div className="grid col-span-1">
