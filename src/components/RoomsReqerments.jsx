@@ -1,4 +1,4 @@
-import { Radio } from "@mui/material";
+import { Radio, RadioGroup } from "@mui/material";
 import React from "react";
 import { LiaBedSolid, LiaSmokingBanSolid } from "react-icons/lia";
 import {
@@ -26,24 +26,17 @@ const RoomsReqerments = () => {
         <h2 className=" font-extrabold">Do you have a smoking preference?</h2>
         <div className="md:flex gap-5">
           <div className="flex items-center gap-2">
-            <Radio
-              checked={selectedValue === "a"}
-              onChange={handleChange}
-              value="a"
-              name="radio-buttons"
-              inputProps={{ "aria-label": "A" }}
+            <input
+              type="radio"
+              name="radio-7"
+              className="radio radio-info"
+              defaultChecked
             />
             <LiaSmokingBanSolid className="w-6 h-6" />
             No-smoking room
           </div>
-          <div className="flex items-center gap-2">
-            <Radio
-              checked={selectedValue === "b"}
-              onChange={handleChange}
-              value="a"
-              name="radio-buttons"
-              inputProps={{ "aria-label": "B" }}
-            />
+          <div className="flex items-center gap-2 py-3">
+            <input type="radio" name="radio-7" className="radio radio-info" />
             <MdOutlineSmokingRooms className="w-6 h-6" />
             smoking room
           </div>
@@ -53,29 +46,43 @@ const RoomsReqerments = () => {
         </h2>
         <div className="md:flex gap-5">
           <div className="flex items-center gap-2">
-            <Radio
-              checked={selectedValue === "a"}
-              onChange={handleChange}
-              value="a"
-              name="radio-buttons"
-              inputProps={{ "aria-label": "A" }}
+            <input
+              type="radio"
+              name="radio-8"
+              className="radio radio-info"
+              defaultChecked
             />
             <MdOutlineBedroomChild className="w-6 h-6" />
             I’d like a large bed
           </div>
-          <div className="flex items-center gap-2">
-            <Radio
-              checked={selectedValue === "b"}
-              onChange={handleChange}
-              value="a"
-              name="radio-buttons"
-              inputProps={{ "aria-label": "B" }}
-            />
+
+          <div className="flex items-center gap-2 py-3">
+            <input type="radio" name="radio-8" className="radio radio-info" />
             <MdBed className="w-6 h-6" />
             I’d like twin beds
           </div>
         </div>
-        <h2 className="text-lg font-extrabold text-blue-500">Click here for more requests</h2>
+        <h2 className="text-lg font-extrabold text-blue-500">
+          Click here for more requests
+        </h2>
+       <div className="grid grid-cols-1 md:grid-cols-2  gap-4 py-4">
+       <div className="flex gap-4 font-bold">
+          <input className=" h-4 w-4 rounded-sm  checked:bg-[#1882ff]border-none" type="checkbox"  />
+          <p>I’d like a room on a high floor</p>
+        </div>
+       <div className="flex gap-4 font-bold">
+          <input className=" h-4 w-4 rounded-sm  checked:bg-[#1882ff]border-none" type="checkbox"  />
+          <p>I’d like a room on a high floor</p>
+        </div>
+       <div className="flex gap-4 font-bold">
+          <input className=" h-4 w-4 rounded-sm  checked:bg-[#1882ff]border-none" type="checkbox"  />
+          <p>I’d like a room on a high floor</p>
+        </div>
+       <div className="flex gap-4 font-bold">
+          <input className=" h-4 w-4 rounded-sm  checked:bg-[#1882ff]border-none" type="checkbox"  />
+          <p>I’d like a room on a high floor</p>
+        </div>
+       </div>
       </div>
     </div>
   );
