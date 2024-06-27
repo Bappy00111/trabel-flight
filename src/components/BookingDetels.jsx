@@ -4,6 +4,7 @@ import { FaArrowRightLong, FaUser } from "react-icons/fa6";
 import CoustomerDetels from "./CoustomerDetels";
 import TravellarsRooms from "./TravellarsRooms";
 import RoomsReqerments from "./RoomsReqerments";
+import Payment from "./Payment";
 
 const BookingDetels = () => {
   const [isClick, setIsClick] = useState(-1);
@@ -97,7 +98,7 @@ const BookingDetels = () => {
     },
   ];
   return (
-    <div className="my-container grid md:grid-cols-3 gap-5 ">
+    <div className="my-container grid  md:grid-cols-3 gap-5 ">
       <div className="grid col-span-2 text-sm">
         <div className="py-5 border rounded-lg">
           <div className="md:flex justify-between ">
@@ -281,9 +282,9 @@ const BookingDetels = () => {
         <RoomsReqerments/>
       </div>
 
-      <div className="grid col-span-1">
+      <div className="grid col-span-2 lg:col-span-1 ">
         <div className="border h-[600px] rounded-lg sticky top-0">
-          <h1>two</h1>
+          <Payment/>
         </div>
       </div>
     </div>

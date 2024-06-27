@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebook } from "react-icons/bi";
+import Input from "./ui/Input";
 
 const Login = () => {
+
+
+
+  const handleClick = ()=>{
+    console.log(email, password)
+  }
   return (
     <div className="bg-[#eff6ff] px-4 py-20">
       <div className="md:w-2/3 2xl:w-1/3  bg-white shadow-2xl flex flex-col mx-auto p-5 md:p-10 rounded-xl">
@@ -25,37 +32,19 @@ const Login = () => {
         </div>
         <p className="text-center pt-4 text-gray-600 text-sm ">Or Sign In with</p>
 
-        <form className="space-y-2">
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-sm text-gray-800 font-bold">Email</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Your email"
-              className="input input-bordered bg-[#eff6ff] border-none h-10"
-              required
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-sm text-gray-800 font-bold">Password</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Your password"
-              className="input input-bordered bg-[#eff6ff] border-none h-10"
-              required
-            />
-          </div>
-        </form>
+        
+          <Input label='Email' type="email"  placeholder="Email" {...register()} />
+          <Input label= 'Password' type="password" placeholder="Password" value={password} setValue ={setPassword} />
+         
+          <button type="submit"  onClick={handleClick} className="bg-[#1882ff] hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm  font-semibold">
+            Sing In
+          </button>
+        {/* </form> */}
         
           <p className="flex justify-end pt-4 text-blue-600 cursor-pointer text-sm font-bold">
             Forgot Password?
           </p>
-          <button className="bg-[#1882ff] hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm  font-semibold">
-            Sing In
-          </button>
+          
           <p className="pt-4 text-center text-sm font-bold">Don't have an account ? <Link to='/regester'><span className="text-blue-600 ">Sing Up</span></Link></p>
         
       </div>
