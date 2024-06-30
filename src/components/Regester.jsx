@@ -4,39 +4,24 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebook } from "react-icons/bi";
 import Input from "./ui/Input";
+import { register } from 'swiper/element';
+import { useForm } from "react-hook-form";
 
 const Regester = () => {
   const [email,setEmail] = useState("")
   const [password,setPassword] = useState("")
   const [number,setNumber] = useState("")
-  const { createUser } = useContext(AuthContext);
+  
+  const {
+    register,
+    handleSubmit
 
-  //   console.log(createUser);
+  } =useForm()
 
-  // const handleSubmite = (e) => {
-  //   e.preventDefault();
-  //   const form = e.target;
-  //   const name = form.name.value;
-  //   const email = form.email.value;
-  //   const password = form.password.value;
+  
 
-  //   const regult = { name, email, password };
-  //   console.log(regult);
-
-  //   createUser(email, password)
-  //     .then((regult) => {
-  //       const singInUser = regult.user;
-  //       console.log(singInUser);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-
-  //   form.reset();
-  // };
-
-  const handleClick = () =>{
-    console.log(email,password,number)
+  const handleClick = (data) =>{
+    console.log(data)
   }
   return (
     <div className="bg-[#eff6ff]  px-4 py-20">
@@ -61,19 +46,19 @@ const Regester = () => {
           Or Sign In with
         </p>
 
-        <form className="space-y-2">
+        <form onSubmit={handleSubmit(handleClick)} className="space-y-2">
           
             
-            <Input label="Email" placeholder="Emter your email" type="email" value={email} setValue={setEmail}  />
-            <Input label="Number" placeholder="Emter your number" type="number" value={number} setValue={setNumber}/>
-            <Input label="Password" placeholder="Emter your password" type="password" value={password} setValue={setPassword}  />
+            <Input label="Email" placeholder="Emter your email" type="email" {...register('email')}/>
+            <Input label="Number" placeholder="Emter your number" type="number" {...register('number')}/>
+            <Input label="Password" placeholder="Emter your password" type="password" {...register('password')} />
          
           
-        </form>
-
-        <button onClick={handleClick} className="bg-[#1882ff] hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm font-semibold">
+        <button onClick={handleClick} className="bg-[#1882ff] w-full hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm font-semibold">
           Sing Up
         </button>
+        </form>
+
         <p className="pt-4 text-center font-bold text-sm">
           Already have an account ?{" "}
           <Link to="/login">

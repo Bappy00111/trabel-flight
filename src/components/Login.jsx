@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebook } from "react-icons/bi";
 import Input from "./ui/Input";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
 
+ const {
+  register,
+  handleSubmit
+ } = useForm()
 
 
-  const handleClick = ()=>{
-    console.log(email, password)
+  const handleClick = (data)=>{
+    console.log(data)
   }
   return (
     <div className="bg-[#eff6ff] px-4 py-20">
@@ -33,13 +38,15 @@ const Login = () => {
         <p className="text-center pt-4 text-gray-600 text-sm ">Or Sign In with</p>
 
         
-          <Input label='Email' type="email"  placeholder="Email" {...register()} />
-          <Input label= 'Password' type="password" placeholder="Password" value={password} setValue ={setPassword} />
+          <form onSubmit={handleSubmit(handleClick)}>
+          <Input label='Email' type="email"  placeholder="Email" {...register("email")} />
+          <Input label= 'Password' type="password" placeholder="Password" {...register("password")} />
          
-          <button type="submit"  onClick={handleClick} className="bg-[#1882ff] hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm  font-semibold">
+          <button type="submit"  onClick={handleClick} className="bg-[#1882ff] w-full hover:bg-blue-600 text-white py-2 rounded-lg mt-4 text-sm  font-semibold">
             Sing In
           </button>
-        {/* </form> */}
+          </form>
+        
         
           <p className="flex justify-end pt-4 text-blue-600 cursor-pointer text-sm font-bold">
             Forgot Password?
